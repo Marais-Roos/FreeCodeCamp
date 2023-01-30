@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please complete the form below</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name
+                <input id="name" type="text" required placeholder="Enter your name"/>
+            </label>
+            <label for="email" id="email-label">
+                Email
+                <input id="email" type="email" required placeholder="Enter your email"/>
+            </label>
+            <label for="email" id="number-label">
+                Age (optional)
+                <input id="number" type="number" min='16' max='80' placeholder="Age"/>
+            </label>
+            <label for="dropdown">
+                How did you hear about us?
+                <select id="dropdown">
+                    <option>Select</option>
+                    <option>Google Search</option>
+                    <option>Referred By A Friend</option>
+                    <option>Social Media</option>
+                    <option>Upwork/Fiverr</option>
+                </select>
+            </label>
+            <p>How would you describe your experience with us?</p>
+            <label>
+                <input type="radio" name="experience" value="5" class="inline"/>
+                Completely Satisfied
+            </label>
+            <label>
+                <input type="radio" name="experience" value="4" class="inline"/>
+                Somewhat Satisfied
+            </label>
+            <label>
+                <input type="radio" name="experience" value="3" class="inline"/>
+                Unsure
+            </label>
+            <label>
+                <input type="radio" name="experience" value="2" class="inline"/>
+                Somewhat Disappointed
+            </label>
+            <label>
+                <input type="radio" name="experience" value="1" class="inline"/>
+                Completely Disappointed
+            </label>
+            <p>What area do you think we could improve on?</p>
+            <label>
+                <input type="checkbox" value="customer-service" class="inline"/>
+                Customer Service
+            </label>
+            <label>
+                <input type="checkbox" value="ui" class="inline"/>
+                User Interfaces
+            </label>
+            <label>
+                <input type="checkbox" value="marketing" class="inline"/>
+                Marketing
+            </label>
+            <label>
+                <input type="checkbox" value="dev" class="inline"/>
+                Development
+            </label>
+            <label>
+                <input type="checkbox" value="support" class="inline"/>
+                Continuous Support
+            </label>   
+            <label>
+                Please leave us a review
+                <textarea placeholder="Your feedback is appreciated..." rows="5" cols="30"></textarea>
+            </label>
+            <input type="submit" id="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
